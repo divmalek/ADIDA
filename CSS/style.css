@@ -1,0 +1,250 @@
+*{
+    -webkit-box-sizing-: border-box;
+   margin: 0;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+
+}  
+.parent{
+    overflow: hidden;
+}
+
+
+
+
+.container{
+    width: 90%;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 40px auto; 
+    border-radius: 30px;
+
+  
+
+}
+
+.container .header{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+
+}
+.container .header ul{
+    list-style: none;
+    background-color: #eee;
+    padding: 50px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top:6; 
+    display: none;
+    
+}
+
+
+   
+.container .header ul li{
+margin: 20px 0;
+font-size: 20px;
+}
+.container .header a{
+    text-decoration: none;
+    color:black;
+}
+
+
+    
+.container .logo{
+    width: 120px; 
+    padding-left: 40px;
+}
+
+.content  {
+    display: flex;
+
+}
+.content .text {
+    padding-top: 150px;
+    padding-left: 30px;
+}
+.content .text  a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.6s;
+
+}
+.content .text  a:hover{
+    background-color: transparent;
+    border:solid white 3px;
+    color: white;
+    
+}
+.content .text h2 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: normal;
+}
+.content .square::before{
+    content: "";
+    width: 50%;
+    background: rgba(255, 255, 255, 0.2);
+
+    height: 650px;
+    position: absolute;
+    right: 0;
+    border-radius: 30px;
+    top: 5;
+    z-index: -10;
+
+}
+.content .text{ 
+    width:50%;
+}
+
+
+.square img{
+    width: 600px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.card img{
+    width:100%;
+    max-width: 300px;
+}
+.buy{
+    margin-top: 150px;
+}
+.buy .heading {
+    font-size: 80px;
+    color: gray;
+    margin-bottom: 40px;
+    letter-spacing: -3px;
+    font-weight: normal;
+}
+.card .info{
+    color: white;
+}
+.buy .containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-gap: 20px; 
+
+
+}
+.card img{
+    border-radius: 30px;
+}
+.card .info a{
+    padding: 8px 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+.card .info{
+    background-color: rgba(255, 255, 255, 0.2); 
+    width:300px;
+    height: 130px;
+    border-radius: 30px;
+}
+.card .info h2{
+    padding-top: 10px;
+    
+}
+
+.card .info a:hover{
+    background-color: transparent;
+    color: white;
+    transition: 0.6s;
+    border: white; 
+    border: solid 3px white;
+ }
+.card .info h2{
+    margin-top: 20px;
+}
+.contact{
+    margin-top: 70px;
+}
+.contact input{
+    width: 300px;
+    margin: 30px 0;
+    height: 50px;
+    border-radius: 30px; 
+    text-align: center;
+}
+input[type=text]{
+    height: 200px;
+    width: 500px;
+}
+input[type=submit]:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transition: 0.6s;
+}
+.contact h2{
+    color: gray;
+    font-size: 70px;
+    font-weight: normal;
+}
+.footer {
+    background-color: gray;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 70px;
+  }
+  .footer span {
+    font-weight: bold;
+    color: white;
+  }
+  
+
+  @media (max-width: 900px) {
+    .content .square{
+        display: none; 
+    }
+    .content .text{
+        padding-left: 120px;
+    }
+    .container .logo{ padding-left: 150px;
+
+    }
+  }  
+ 
+  @media (max-width: 525px) {
+    .buy .heading{
+        font-size: 50px;
+    }
+    .contact h2{
+        font-size: 50px;
+    }
+    .contact input{
+        width:200px;
+    }
+  }  
+  @media (max-width: 442px) {
+    .content .text h2{
+        font-size: 40px;
+        
+    }
+  }  
